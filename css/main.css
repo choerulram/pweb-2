@@ -1,0 +1,24 @@
+.container {
+    margin-top: 250px;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    background: #fff;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    border-color: transparent;
+    transform: translateY(-3px);
+}
+
+.btn-danger {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-danger:hover {
+    background-color: rgb(220, 20, 60);
+    border-color: rgb(220, 20, 60);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
