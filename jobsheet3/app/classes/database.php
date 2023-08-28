@@ -3,18 +3,37 @@
         public $host = "localhost",
                $username = "root",
                $password = "",
-               $db =  "akademik";
+               $db =  "akademik",
+               $koneksi;
 
-        function __construct() {
-            $koneksi=mysqli_connect($this->host, $this->username, $this->password, $this->db);
+        public function __construct() {
+            // membuat koneksi ke database MySQL dan menyimpannya
+            $this->koneksi = mysqli_connect($this->host, $this->username, $this->password, $this->db);
         }
 
-        function tampil_mahasiswa() {
-            $data = mysqli_query($this->koneksi, "select * from mahasiswa");
-            while ($d = mysqli_fetch_array($data)) {
+        public function tampil_mahasiswa() {
+            // menjalankan query untuk mengambil data mahasiswa dari tabel "mahasiswa"
+            $data = mysqli_query($this->koneksi, "select * from mhs");
+            while ($d = mysqli_fetch_array($data)) { // mengambil setiap baris query dan menyimpannya dalam array $hasil
                 $hasil[] = $d;
             }
             return $hasil;
+        }
+        
+        function tambah_mhs($nim,$nama,$alamat) {
+            mysqli_query($this->koneksi, "insert into mhs (nim,nama,alamat) values ('$nim','$nama','$alamat')");
+        }
+
+        function edit($id) {
+            $data = mysqli_query($this->koneksi, "select * from mhs where id = '$id'");
+            while ($d=mysqli_fetch_array($data)) {
+                $hasil[] = $d;
+            }
+            return $hasil;
+        }
+
+        function update($id, $nim, $nama, $alamat) {
+            mysqli_query($this->koneksi, "update mhs set nim='$nim', nama='$nama', alamat='$alamat' where id='$id'");
         }
     }
 ?>
