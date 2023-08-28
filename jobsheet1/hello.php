@@ -11,7 +11,7 @@
     <form action="" method="post">
         <div class="container border w-25 p-5 mt-25 bg-light rounded">
             <?php 
-                echo "<em>Hello World!</em>"
+                echo "<i>Hello World!</i>"
             ?>
         </div>
     </form>

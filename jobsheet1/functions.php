@@ -22,9 +22,10 @@
                     <input type="submit" class="btn btn-danger">
             </div>
             <?php 
+                // cek data lingkaran dan persegi sudah dikirim melalui POST
                 if (isset($_POST["lingkaran"]) && isset($_POST["persegi"])) {
-                    $r = $_POST["lingkaran"];
-                    $s = $_POST["persegi"];
+                    $r = $_POST["lingkaran"]; // mengambil nilai jari-jari
+                    $s = $_POST["persegi"]; // mengambil nilai sisi
                     
                     function LuasLingkaran($r) {
                         $luasL = 3.14 * $r * $r;

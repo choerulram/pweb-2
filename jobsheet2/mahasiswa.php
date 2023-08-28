@@ -14,9 +14,9 @@
                 // class
                 class mahasiswa {
                     // property
-                    var $nim = "220302049";
-                    var $nama = "Irul";
-                    var $alamat = "Jl.Tongkol";
+                    var $nim = "220302049",
+                        $nama = "Irul",
+                        $alamat = "Jl.Tongkol";
 
                     // method
                     function tampil_nama() {

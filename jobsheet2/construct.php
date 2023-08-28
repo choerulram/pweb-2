@@ -3,8 +3,8 @@
     class mahasiswa {
         // property
         var $nim, 
-               $nama, 
-               $alamat;
+            $nama, 
+            $alamat;
 
         // method
         function __construct() {
@@ -19,7 +19,7 @@
         // method
         function tampil_mahasiswa() {
             return "tidak akan menjadi joki atau menggunakan jasa joki sampai lulus kuliah ";
-        } // funtion tampil_nama
+        } // funtion tampil_mahasiswa
     } // class mahasiswa
 
     // object

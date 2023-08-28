@@ -13,14 +13,16 @@
             <?php 
                 $umur = 18; // integer
                 $nama = "Irul"; // string
-                $jurusan = true; // boolean
+                $jurusan = false; // boolean
                 
                 // boolean dg penggabungan string
                 $output = "Perkenalkan nama saya " . $nama . ", umur saya " . $umur . " tahun. Saya dari jurusan " 
-                . ($jurusan ? "D3 Teknik Informatika" : "D3 Teknik Mesin" ) . ".<br>"; 
+                . ($jurusan ? "D3 Teknik Informatika" : "D3 Teknik Mesin" ) . ".<br><br>";
+                echo "Boolean penggabungan string : <br>"; 
                 echo $output; // tampilkan isi variabel output
                 
                 // boolean dg kondisi
+                echo "Boolean dengan kondisi : <br>";
                 if ($jurusan) {
                     echo "D3 Teknik Informatika";
                 } else {
