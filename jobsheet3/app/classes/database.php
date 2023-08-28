@@ -32,6 +32,10 @@
             mysqli_query($this->koneksi, "insert into mhs (nim,nama,alamat) values ('$nim','$nama','$alamat')");
         }
 
+        function tambah_dsn($nidn,$nama,$alamat) {
+            mysqli_query($this->koneksi, "insert into dosen (nidn,nama,alamat) values ('$nidn','$nama','$alamat')");
+        }
+
         function edit($id) {
             $data = mysqli_query($this->koneksi, "select * from mhs where id = '$id'");
             while ($d=mysqli_fetch_array($data)) {
