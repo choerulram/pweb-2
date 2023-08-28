@@ -25,7 +25,7 @@
                 <tr>
                     <td>NIM</td>
                     <td>
-                        <input type="hidden" name="npm" value="<?php echo $d['id']?>">
+                        <input type="hidden" name="id" value="<?php echo $d['id']?>">
                         <input type="text" name="nim" value="<?php echo $d['nim']?>">
                     </td>
                 </tr>
