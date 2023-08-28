@@ -16,7 +16,7 @@
                 $db = new database();
             ?>
             <h3>Data Dosen</h3>
-            <a href="input_mhs.php">Tambah Dosen</a>
+            <a href="input_dsn.php">Tambah Dosen</a>
             <table>
                 <tr>
                     <th>No</th>
