@@ -2,22 +2,22 @@
     // class
     class mahasiswa {
         // property
-        public $nim, 
+        var $nim, 
                $nama, 
                $alamat;
 
         // method
-        public function __construct() {
+        function __construct() {
             echo "Saya Mahasiswa Teknik Informatika ";
         } // constuct
 
         // method
-        public function __destruct() {
+        function __destruct() {
             echo "Politeknik Negeri Cilacap";
         } // destruct
 
         // method
-        public function tampil_mahasiswa() {
+        function tampil_mahasiswa() {
             return "tidak akan menjadi joki atau menggunakan jasa joki sampai lulus kuliah ";
         } // funtion tampil_nama
     } // class mahasiswa
