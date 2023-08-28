@@ -35,5 +35,10 @@
         function update($id, $nim, $nama, $alamat) {
             mysqli_query($this->koneksi, "update mhs set nim='$nim', nama='$nama', alamat='$alamat' where id='$id'");
         }
+
+
+        function hapus($id) {
+            mysqli_query($this->koneksi, "delete from mhs where id='$id'");
+        }
     }
 ?>

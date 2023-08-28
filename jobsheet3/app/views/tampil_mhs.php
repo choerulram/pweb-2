@@ -39,7 +39,7 @@
                             <!-- orange -->
                             <a href="edit_mhs.php?id=<?php echo $x['id']; ?>&aksi=edit">Edit</a>
                             <!-- merah -->
-                            <a href="hapus_mhs.php?id=<?php echo $x['id']; ?>&aksi=hapus">Hapus</a>
+                            <a href="proses_mhs.php?id=<?php echo $x['id']; ?>&aksi=hapus">Hapus</a>
                         </td>
                     </tr>
                 <?php 
