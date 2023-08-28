@@ -11,10 +11,18 @@
             $this->koneksi = mysqli_connect($this->host, $this->username, $this->password, $this->db);
         }
 
-        public function tampil_mahasiswa() {
+        function tampil_mahasiswa() {
             // menjalankan query untuk mengambil data mahasiswa dari tabel "mahasiswa"
             $data = mysqli_query($this->koneksi, "select * from mhs");
             while ($d = mysqli_fetch_array($data)) { // mengambil setiap baris query dan menyimpannya dalam array $hasil
+                $hasil[] = $d;
+            }
+            return $hasil;
+        }
+
+        function tampil_dosen() {
+            $data = mysqli_query($this->koneksi, "select * from dosen");
+            while ($d = mysqli_fetch_array($data)) {
                 $hasil[] = $d;
             }
             return $hasil;
