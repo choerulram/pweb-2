@@ -16,9 +16,6 @@
                 <div class="pt-2 pb-2 mb-3 text-center">
                     <h1>Tambah Data Dosen</h1>
                 </div>
-                <div class="alert alert-success mb-4" id="myAlert" style="display: none;">
-                    Data Berhasil Dikirim. Klik <a href="proses_dsn.php?aksi=tambah" class="alert-link">di sini</a> untuk melihat
-                </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label"><b>NIDN</b></label>
                     <input type="text" class="form-control" name="nidn" id="exampleFormControlInput1" placeholder="Masukkan nidn..." required/>
