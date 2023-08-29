@@ -27,6 +27,13 @@
                         </div>
                     <?php
                     }
+                    if (isset($_GET['status_edit']) && $_GET['status_edit'] === 'success_edit') {
+                        ?>
+                            <div class="alert alert-success" id="success-alert" role="alert">
+                                Berhasil edit data
+                            </div>
+                        <?php
+                        }
                 ?>
                 <a class="btn btn-primary mb-2 mt-2" href="input_mhs.php">Tambah Mahasiswa</a>
                 <table class="table">
