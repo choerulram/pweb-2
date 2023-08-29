@@ -9,7 +9,7 @@
         
     } else if ($aksi=="update") {
         $db->update_dsn($_POST['id'],$_POST['nidn'],$_POST['nama'],$_POST['alamat']);
-        header("location:tampil_dsn.php");
+        header("location:tampil_dsn.php?status=success");
     } else if ($aksi=="hapus") {
         $db->hapus_dsn($_GET['id']);
         header("location:tampil_dsn.php");
