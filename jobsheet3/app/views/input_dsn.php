@@ -29,7 +29,7 @@
 					<textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Tuliskan alamat anda..." name="alamat" required></textarea>
 				</div>
                 <div class="button-choice p-0">
-					<input class="btn btn-primary" type="submit" value="Simpan" onclick="myFunction()">
+					<input class="btn btn-primary" type="submit" value="Simpan">
 				</div>
             </div>
         </form>

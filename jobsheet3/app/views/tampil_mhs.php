@@ -19,6 +19,15 @@
                     $db = new database();
                 ?>
                 <h3>Data Mahasiswa</h3>
+                <?php
+                    if (isset($_GET['status']) && $_GET['status'] === 'success') {
+                    ?>
+                        <div class="alert alert-success" id="success-alert" role="alert">
+                            Berhasil menambahkan data
+                        </div>
+                    <?php
+                    }
+                ?>
                 <a class="btn btn-primary mb-2 mt-2" href="input_mhs.php">Tambah Mahasiswa</a>
                 <table class="table">
                     <tr>
@@ -50,6 +59,7 @@
             </div>
         </form>
     </div>
+    <script src="../../public/assets/js/delAlert.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
