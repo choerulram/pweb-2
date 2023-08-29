@@ -19,8 +19,8 @@
                     $db = new database();
                 ?>
                 <h3>Data Mahasiswa</h3>
-                <a href="input_mhs.php">Tambah Mahasiswa</a>
-                <table>
+                <a class="btn btn-primary mb-2 mt-2" href="input_mhs.php">Tambah Mahasiswa</a>
+                <table class="table">
                     <tr>
                         <th>No</th>
                         <th>NIM</th>
@@ -40,9 +40,9 @@
                             <td><?php echo $x['alamat'] ?></td>
                             <td>
                                 <!-- orange -->
-                                <a href="edit_mhs.php?id=<?php echo $x['id']; ?>&aksi=edit">Edit</a>
+                                <a class="btn btn-warning" href="edit_mhs.php?id=<?php echo $x['id']; ?>&aksi=edit">Edit</a>
                                 <!-- merah -->
-                                <a href="proses_mhs.php?id=<?php echo $x['id']; ?>&aksi=hapus">Hapus</a>
+                                <a class="btn btn-danger" href="proses_mhs.php?id=<?php echo $x['id']; ?>&aksi=hapus">Hapus</a>
                             </td>
                         </tr>
                     <?php 
