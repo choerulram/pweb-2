@@ -63,5 +63,9 @@
         function hapus($id) {
             mysqli_query($this->koneksi, "delete from mhs where id='$id'");
         }
+
+        function hapus_dsn($id) {
+            mysqli_query($this->koneksi, "delete from dosen where id='$id'");
+        }
     }
 ?>
