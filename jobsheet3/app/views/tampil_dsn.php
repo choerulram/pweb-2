@@ -17,10 +17,11 @@
                 <?php 
                     // memanggil class database
                     include '../classes/database.php';
-                    $db = new database();
+                    $db = new database(); // buat object $db
                 ?>
                 <h3>Data Dosen</h3>
                 <?php
+                    // memeriksa apakah ada status 'success' dari URL
                     if (isset($_GET['status']) && $_GET['status'] === 'success') {
                     ?>
                         <div class="alert alert-success" id="success-alert" role="alert">
@@ -28,6 +29,7 @@
                         </div>
                     <?php
                     }
+                    // memeriksa apakah ada status 'success_edit' dari URL
                     if (isset($_GET['status_edit']) && $_GET['status_edit'] === 'success_edit') {
                     ?>
                         <div class="alert alert-success" id="success-alert" role="alert">
@@ -36,7 +38,7 @@
                     <?php
                     }
                 ?>
-                <a class="btn btn-primary mb-2 mt-2" href="input_dsn.php">Tambah Dosen</a>
+                <a class="btn btn-primary mb-3 mt-2" href="input_dsn.php">Tambah Dosen</a>
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <tr>
@@ -47,7 +49,8 @@
                             <th>Aksi</th>
                         </tr>
                         <?php 
-                        $no = 1;
+                        $no = 1; // inisiasi nomor
+                        // menampilkan data mahasiswa dari database
                         foreach($db->tampil_dosen() as $x) {
                             
                             ?>

@@ -24,6 +24,7 @@
                 </div>
 
                 <?php 
+                    // perulangan untuk mengambil data mahasiswa yang akan di edit
                     foreach($db->edit($_GET['id']) as $d) {
                 
                 ?>

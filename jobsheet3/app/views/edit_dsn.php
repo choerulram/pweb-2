@@ -23,7 +23,8 @@
                     <h1>Edit Data Dosen</h1>
                 </div>
 
-                <?php 
+                <?php
+                    // perulangan untuk mengambil data mahasiswa yang akan di edit
                     foreach($db->edit_dsn($_GET['id']) as $d) {
 
                 ?>
