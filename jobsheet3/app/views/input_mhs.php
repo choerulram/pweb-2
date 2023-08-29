@@ -12,30 +12,25 @@
         include "nav.php";
     ?>
         <form action="proses_mhs.php?aksi=tambah" method="post">
-            <div class="container border w-25 p-5 mt-25 bg-light rounded">
-                <table>
-                    <h3>Tambah Data Mahasiswa</h3>
-                    <tr>
-                        <td>NIM</td>
-                        <td><input type="text" name="nim"></td>
-                    </tr>
-                    <tr>
-                        <td>Nama</td>
-                        <td><input type="text" name="nama"></td>
-                    </tr>
-                    <tr>
-                        <td>Alamat</td>
-                        <td>
-                            <textarea name="alamat" cols="30" rows="5"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <input type="submit" value="Simpan">
-                        </td>
-                    </tr>
-                </table>
+            <div class="container border w-50 p-5 mt-25 bg-light rounded">
+                <div class="pt-2 pb-2 mb-3 text-center">
+                    <h1>Tambah Data Mahasiswa</h1>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><b>NIM</b></label>
+                    <input type="text" class="form-control" name="nim" id="exampleFormControlInput1" placeholder="Masukkan nim..." required/>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><b>Nama</b></label>
+                    <input type="text" class="form-control" name="nama" id="exampleFormControlInput1" placeholder="Masukkan nama..." required/>
+                </div>
+                <div class="mb-3">
+					<label for="exampleFormControlTextarea1" class="form-label"><b>Alamat</b></label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Tuliskan alamat anda..." name="alamat" required></textarea>
+				</div>
+                <div class="button-choice p-0">
+					<input class="btn btn-primary" type="submit" value="SIMPAN">
+				</div>
             </div>
         </form>
     </div>
