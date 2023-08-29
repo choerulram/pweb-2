@@ -49,9 +49,7 @@
                             <td><?php echo $x['nama'] ?></td>
                             <td><?php echo $x['alamat'] ?></td>
                             <td>
-                                <!-- orange -->
                                 <a class="btn btn-warning" href="edit_dsn.php?id=<?php echo $x['id']; ?>&aksi=edit">Edit</a>
-                                <!-- merah -->
                                 <a class="btn btn-danger" href="proses_dsn.php?id=<?php echo $x['id']; ?>&aksi=hapus">Hapus</a>
                             </td>
                         </tr>

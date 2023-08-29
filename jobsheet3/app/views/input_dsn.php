@@ -38,10 +38,10 @@
         </form>
     </div>
     <script>
-        // Mengambil status alert dari session storage saat memuat halaman
+        // mengambil status alert dari session storage saat memuat halaman
         var alertStatus = sessionStorage.getItem('alertStatus');
 
-        // Fungsi untuk menampilkan pesan alert jika status true
+        // fungsi untuk menampilkan pesan alert jika status true
         function showAlert() {
             var myAlert = document.getElementById('myAlert');
             if (alertStatus === 'true') {
@@ -49,7 +49,7 @@
             }
         }
 
-        // Memanggil fungsi untuk menampilkan alert saat halaman dimuat
+        // memanggil fungsi untuk menampilkan alert saat halaman dimuat
         showAlert();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
