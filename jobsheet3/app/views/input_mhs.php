@@ -8,33 +8,37 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <form action="proses_mhs.php?aksi=tambah" method="post">
-        <div class="container border w-25 p-5 mt-25 bg-light rounded">
-            <table>
-                <h3>Tambah Data Mahasiswa</h3>
-                <tr>
-                    <td>NIM</td>
-                    <td><input type="text" name="nim"></td>
-                </tr>
-                <tr>
-                    <td>Nama</td>
-                    <td><input type="text" name="nama"></td>
-                </tr>
-                <tr>
-                    <td>Alamat</td>
-                    <td>
-                        <textarea name="alamat" cols="30" rows="5"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <input type="submit" value="Simpan">
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </form>
+    <?php 
+        include "nav.php";
+    ?>
+        <form action="proses_mhs.php?aksi=tambah" method="post">
+            <div class="container border w-25 p-5 mt-25 bg-light rounded">
+                <table>
+                    <h3>Tambah Data Mahasiswa</h3>
+                    <tr>
+                        <td>NIM</td>
+                        <td><input type="text" name="nim"></td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td><input type="text" name="nama"></td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>
+                            <textarea name="alamat" cols="30" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Simpan">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
