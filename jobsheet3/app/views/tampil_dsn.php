@@ -38,7 +38,7 @@
                 ?>
                 <a class="btn btn-primary mb-2 mt-2" href="input_dsn.php">Tambah Dosen</a>
                 <div class="table-responsive">
-                    <table class="table">
+                    <table class="table table-striped">
                         <tr>
                             <th>No</th>
                             <th>NIDN</th>
