@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Dosen</title>
+    <title>Tambah Data Dosen</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -15,6 +15,9 @@
             <div class="container border w-50 p-5 mt-25 bg-light rounded">
                 <div class="pt-2 pb-2 mb-3 text-center">
                     <h1>Tambah Data Dosen</h1>
+                </div>
+                <div class="alert alert-success mb-4" id="myAlert" style="display: none;">
+                    Data Berhasil Dikirim. Klik <a href="proses_dsn.php?aksi=tambah" class="alert-link">di sini</a> untuk melihat
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label"><b>NIDN</b></label>
@@ -29,11 +32,26 @@
 					<textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Tuliskan alamat anda..." name="alamat" required></textarea>
 				</div>
                 <div class="button-choice p-0">
-					<input class="btn btn-primary" type="submit" value="SIMPAN">
+					<input class="btn btn-primary" type="submit" value="Simpan" onclick="myFunction()">
 				</div>
             </div>
         </form>
     </div>
+    <script>
+        // Mengambil status alert dari session storage saat memuat halaman
+        var alertStatus = sessionStorage.getItem('alertStatus');
+
+        // Fungsi untuk menampilkan pesan alert jika status true
+        function showAlert() {
+            var myAlert = document.getElementById('myAlert');
+            if (alertStatus === 'true') {
+                myAlert.style.display = 'block';
+            }
+        }
+
+        // Memanggil fungsi untuk menampilkan alert saat halaman dimuat
+        showAlert();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
