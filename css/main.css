@@ -3,6 +3,7 @@
     border: 2px solid black;
     border-radius: 8px;
     transition: all 0.3s ease;
+    width: 25px;
 }
 
 .container:hover {

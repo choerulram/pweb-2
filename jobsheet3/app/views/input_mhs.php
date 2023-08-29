@@ -12,7 +12,7 @@
         include "nav.php";
     ?>
         <form action="proses_mhs.php?aksi=tambah" method="post">
-            <div class="container border w-50 p-5 mt-25 bg-light rounded">
+            <div class="container-fluid border p-5 mt-5 bg-light rounded">
                 <div class="pt-2 pb-2 mb-3 text-center">
                     <h1>Tambah Data Mahasiswa</h1>
                 </div>

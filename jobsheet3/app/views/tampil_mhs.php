@@ -12,7 +12,7 @@
         include "nav.php";
     ?>
         <form action="" method="post">
-            <div class="container border w-50 p-5 mt-25 bg-light rounded">
+            <div class="container-fluid border p-5 mt-5 bg-light rounded">
                 <?php 
                     // memanggil class database
                     include '../classes/database.php';
@@ -36,33 +36,35 @@
                         }
                 ?>
                 <a class="btn btn-primary mb-2 mt-2" href="input_mhs.php">Tambah Mahasiswa</a>
-                <table class="table">
-                    <tr>
-                        <th>No</th>
-                        <th>NIM</th>
-                        <th>Nama</th>
-                        <th>Alamat</th>
-                        <th>Aksi</th>
-                    </tr>
-                    <?php 
-                    $no = 1;
-                    foreach($db->tampil_mahasiswa() as $x) {
-                        
-                        ?>
+                <div class="table-responsive">
+                    <table class="table">
                         <tr>
-                            <td><?php echo $no++ ?></td>
-                            <td><?php echo $x['nim'] ?></td>
-                            <td><?php echo $x['nama'] ?></td>
-                            <td><?php echo $x['alamat'] ?></td>
-                            <td>
-                                <a class="btn btn-warning" href="edit_mhs.php?id=<?php echo $x['id']; ?>&aksi=edit">Edit</a>
-                                <a class="btn btn-danger" href="proses_mhs.php?id=<?php echo $x['id']; ?>&aksi=hapus">Hapus</a>
-                            </td>
+                            <th>No</th>
+                            <th>NIM</th>
+                            <th>Nama</th>
+                            <th>Alamat</th>
+                            <th>Aksi</th>
                         </tr>
-                    <?php 
-                    }
-                    ?> 
-                </table>
+                        <?php 
+                        $no = 1;
+                        foreach($db->tampil_mahasiswa() as $x) {
+                            
+                            ?>
+                            <tr>
+                                <td><?php echo $no++ ?></td>
+                                <td><?php echo $x['nim'] ?></td>
+                                <td><?php echo $x['nama'] ?></td>
+                                <td><?php echo $x['alamat'] ?></td>
+                                <td>
+                                    <a class="btn btn-warning" href="edit_mhs.php?id=<?php echo $x['id']; ?>&aksi=edit">Edit</a>
+                                    <a class="btn btn-danger" href="proses_mhs.php?id=<?php echo $x['id']; ?>&aksi=hapus">Hapus</a>
+                                </td>
+                            </tr>
+                        <?php 
+                        }
+                        ?> 
+                    </table>
+                </div>
             </div>
         </form>
     </div>
