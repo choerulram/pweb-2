@@ -19,34 +19,31 @@
     ?>
         <form action="proses_mhs.php?aksi=update" method="post">
             <div class="container border w-50 p-5 mt-25 bg-light rounded">
+                <div class="pt-2 pb-2 mb-3 text-center">
+                    <h1>Edit Data Mahasiswa</h1>
+                </div>
+
                 <?php 
                     foreach($db->edit($_GET['id']) as $d) {
+                
+                ?>
 
-                        ?>
-                <table>
-                    <h3>Edit Data Mahasiswa</h3>
-                    <tr>
-                        <td>NIM</td>
-                        <td>
-                            <input type="hidden" name="id" value="<?php echo $d['id']?>">
-                            <input type="text" name="nim" value="<?php echo $d['nim']?>">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Nama</td>
-                        <td><input type="text" name="nama" value="<?php echo $d['nama']?>"></td>
-                    </tr>
-                    <tr>
-                        <td>Alamat</td>
-                        <td>
-                            <textarea name="alamat" cols="30" rows="5"><?php echo $d['alamat']?></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><input type="submit" value="Simpan"></td>
-                    </tr>
-                </table>
+                <div class="mb-3">
+					<label for="exampleFormControlInput1" class="form-label"><b>NIM</b></label>
+					<input type="hidden" name="id" value="<?php echo $d['id']; ?>">
+					<input type="text" name="nim" value="<?php echo $d['nim']; ?>" class="form-control" id="exampleFormControlInput1" placeholder="Masukkan nim..." required/>
+				</div>
+				<div class="mb-3">
+					<label for="exampleFormControlInput1" class="form-label"><b>Nama</b></label>
+					<input type="text" name="nama" value="<?php echo $d['nama']; ?>" class="form-control" id="exampleFormControlInput1" placeholder="Masukkan nama..." required/>
+				</div>
+                <div class="mb-3">
+					<label for="exampleFormControlTextarea1" class="form-label"><b>Alamat</b></label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Tuliskan alamat lengkap anda..." name="alamat" required><?php echo $d['alamat']; ?></textarea>
+				</div>
+                <div class="button-choice p-0">
+					<input class="btn btn-warning" type="submit" name="submit" value="SIMPAN">
+				</div>
                 <?php 
                 }
                 ?>
