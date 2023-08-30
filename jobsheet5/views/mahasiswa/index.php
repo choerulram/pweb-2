@@ -75,7 +75,7 @@
                                 <td><?php echo $x['alamat'] ?></td>
                                 <td>
                                     <a class="btn btn-warning" href="edit.php?id=<?php echo $x['id']; ?>">Edit</a>
-                                    <a class="btn btn-danger" href="proses_mhs.php?id=<?php echo $x['id']; ?>&aksi=hapus">Hapus</a>
+                                    <a class="btn btn-danger" href="hapus.php?id=<?php echo $x['id']; ?>" onclick="return confirm('Apakah yakin akan menghapus')">Hapus</a>
                                 </td>
                             </tr>
                         <?php 

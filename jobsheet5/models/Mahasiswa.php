@@ -38,5 +38,15 @@
                 return false;
             }
         }
+
+        public function deleteMahasiswa($id) {
+            $query = "DELETE FROM mhs WHERE id = $id";
+            $result = mysqli_query($this->koneksi,$query);
+            if ($result) {
+                return true;
+            } else {
+                return false;
+            }
+        }
     }
 ?>
