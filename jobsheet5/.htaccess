@@ -6,5 +6,5 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^home/?$ index.php?page=$1 [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME !-d
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^mahasiswa/?$ views/mahasiswa/index.php?page=$1 [L]
