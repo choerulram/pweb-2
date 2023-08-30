@@ -2,6 +2,7 @@
     // memanggil class model database
     include_once '../../config.php';
     include_once '../../controllers/MahasiswaController.php';
+    require '../../index.php';
 
     // instansiasi class database
     $database = new database;
