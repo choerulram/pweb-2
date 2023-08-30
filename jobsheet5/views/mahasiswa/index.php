@@ -67,7 +67,7 @@
                         <?php
                         // }
                 ?>
-                <a class="btn btn-primary mb-3 mt-2" href="input_mhs.php">Tambah Mahasiswa</a>
+                <a class="btn btn-primary mb-3 mt-2" href="tambah.php">Tambah Mahasiswa</a>
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <tr>
