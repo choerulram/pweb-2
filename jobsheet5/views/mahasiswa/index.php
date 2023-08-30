@@ -31,10 +31,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link" href="tampil_mhs.php">Mahasiswa</a>
+                <a class="nav-link" href="#">Mahasiswa</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="tampil_dsn.php">Dosen</a>
+                <a class="nav-link" href="#">Dosen</a>
                 </li>
             </ul>
             </div>
@@ -43,30 +43,7 @@
 
         <form action="" method="post">
             <div class="container-fluid border p-5 mt-5 bg-light rounded">
-                <?php 
-                    // memanggil class database
-                    // include '../classes/database.php';
-                    // $db = new database();
-                ?>
                 <h3>Data Mahasiswa</h3>
-                <?php
-                    // memeriksa apakah ada status 'success' dari URL 
-                    // if (isset($_GET['status']) && $_GET['status'] === 'success') {
-                    ?>
-                        <!-- <div class="alert alert-success" id="success-alert" role="alert">
-                            Berhasil menambahkan data
-                        </div> -->
-                    <?php
-                    // }
-                    // memeriksa apakah ada status 'success_edit' dari URL
-                    // if (isset($_GET['status_edit']) && $_GET['status_edit'] === 'success_edit') {
-                        ?>
-                            <!-- <div class="alert alert-success" id="success-alert" role="alert">
-                                Berhasil edit data
-                            </div> -->
-                        <?php
-                        // }
-                ?>
                 <a class="btn btn-primary mb-3 mt-2" href="tambah.php">Tambah Mahasiswa</a>
                 <div class="table-responsive">
                     <table class="table table-striped">
@@ -97,7 +74,7 @@
                                 <td><?php echo $x['agama'] ?></td>
                                 <td><?php echo $x['alamat'] ?></td>
                                 <td>
-                                    <a class="btn btn-warning" href="edit_mhs.php?id=<?php echo $x['id']; ?>&aksi=edit">Edit</a>
+                                    <a class="btn btn-warning" href="edit.php?id=<?php echo $x['id']; ?>">Edit</a>
                                     <a class="btn btn-danger" href="proses_mhs.php?id=<?php echo $x['id']; ?>&aksi=hapus">Hapus</a>
                                 </td>
                             </tr>
@@ -109,7 +86,6 @@
             </div>
         </form>
     </div>
-    <!-- <script src="../../public/assets/js/delAlert.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
