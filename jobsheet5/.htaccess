@@ -20,3 +20,9 @@ RewriteRule ^proses_tambah/?$ views/mahasiswa/proses_tambah.php?page=$1 [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^edit/?$ views/mahasiswa/edit.php?page=$1 [L]
+
+
+# DOSEN
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^dosen/?$ views/dosen/index.php?page=$1 [L]
