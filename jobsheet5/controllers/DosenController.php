@@ -12,9 +12,9 @@
             return $this->model->getAllDosen();
         }
 
-        // public function createDosen($nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat) {
-        //     return $this->model->createDosen($nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat);
-        // }
+        public function createDosen($nidn, $nama, $alamat) {
+            return $this->model->createDosen($nidn, $nama, $alamat);
+        }
 
         // public function getDosenById($id) {
         //     return $this->model->getDosenById($id);

@@ -12,15 +12,15 @@
             return $result;
         }
 
-        // public function createDosen($nidn, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat) {
-        //     $query = "INSERT INTO dosen (nidn,nama,tempat_lahir,tanggal_lahir,jenis_kelamin,agama,alamat) VALUES ('$nidn','$nama','$tempat_lahir','$tanggal_lahir','$jenis_kelamin','$agama','$alamat')";
-        //     $result = mysqli_query($this->koneksi,$query);
-        //     if ($result) {
-        //         return true;
-        //     } else {
-        //         return false;
-        //     }
-        // }
+        public function createDosen($nidn, $nama, $alamat) {
+            $query = "INSERT INTO dosen (nidn,nama,alamat) VALUES ('$nidn','$nama','$alamat')";
+            $result = mysqli_query($this->koneksi,$query);
+            if ($result) {
+                return true;
+            } else {
+                return false;
+            }
+        }
 
         // public function getMahasiswaById($id) {
         //     $query = "SELECT * FROM dosen WHERE id = $id";

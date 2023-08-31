@@ -5,6 +5,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^home/?$ index.php?page=$1 [L]
 
+# MAHASISWA
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^mahasiswa/?$ views/mahasiswa/index.php?page=$1 [L]
@@ -26,3 +27,11 @@ RewriteRule ^edit/?$ views/mahasiswa/edit.php?page=$1 [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^dosen/?$ views/dosen/index.php?page=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^tambah_dsn/?$ views/dosen/tambah.php?page=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^proses_tambah_dsn/?$ views/dosen/proses_tambah.php?page=$1 [L]

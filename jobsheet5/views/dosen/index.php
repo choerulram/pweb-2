@@ -14,8 +14,8 @@
 
         <form action="" method="post">
             <div class="container-fluid border p-5 mt-4 bg-light rounded">
-                <h3>Data Mahasiswa</h3>
-                <a class="btn btn-primary mb-3 mt-2" href="tambah">Tambah Mahasiswa</a>
+                <h3>Data Dosen</h3>
+                <a class="btn btn-primary mb-3 mt-2" href="tambah_dsn">Tambah Dosen</a>
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <tr>
