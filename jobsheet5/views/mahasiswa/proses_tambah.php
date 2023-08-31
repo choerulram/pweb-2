@@ -1,6 +1,7 @@
 <?php 
     include_once '../../config.php';
     include_once '../../controllers/MahasiswaController.php';
+    require '../../index.php';
 
     $database = new database ();
     $db = $database->getKoneksi();
@@ -18,9 +19,9 @@
         $result = $mahasiswaController->createMahasiswa($nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat);
 
         if ($result) {
-            header("location:index.php");
+            header("location:mahasiswa");
         } else {
-            header("location:tambah.php");
+            header("location:tambah");
         }
     }
 ?>

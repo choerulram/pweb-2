@@ -8,3 +8,11 @@ RewriteRule ^home/?$ index.php?page=$1 [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^mahasiswa/?$ views/mahasiswa/index.php?page=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^tambah/?$ views/mahasiswa/tambah.php?page=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^proses_tambah/?$ views/mahasiswa/proses_tambah.php?page=$1 [L]
