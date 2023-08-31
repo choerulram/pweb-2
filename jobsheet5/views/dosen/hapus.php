@@ -14,7 +14,7 @@
         $result =  $dosenController->deleteDosen($id);
 
         if ($result) {
-            header("location:index.php");
+            header("location:http://localhost/jobsheet5/views/dosen/index.php");
         } else {
             echo "Gagal menghapus data";
         }

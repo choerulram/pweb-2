@@ -22,22 +22,21 @@
             }
         }
 
-        // public function getMahasiswaById($id) {
-        //     $query = "SELECT * FROM dosen WHERE id = $id";
-        //     $result = mysqli_query($this->koneksi,$query);
-        //     return mysqli_fetch_assoc($result);
-        // }
+        public function getDosenById($id) {
+            $query = "SELECT * FROM dosen WHERE id = $id";
+            $result = mysqli_query($this->koneksi,$query);
+            return mysqli_fetch_assoc($result);
+        }
 
-        // public function updateDosen($id, $nidn, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat) {
-        //     $query = "UPDATE dosen SET nidn='$nidn', nama='$nama', tempat_lahir='$tempat_lahir', tanggal_lahir='$tanggal_lahir', 
-        //     jenis_kelamin='$jenis_kelamin', agama='$agama', alamat='$alamat' WHERE id='$id'";
-        //     $result = mysqli_query($this->koneksi,$query);
-        //     if ($result) {
-        //         return true;
-        //     } else {
-        //         return false;
-        //     }
-        // }
+        public function updateDosen($id, $nidn, $nama, $alamat) {
+            $query = "UPDATE dosen SET nidn='$nidn', nama='$nama', alamat='$alamat' WHERE id='$id'";
+            $result = mysqli_query($this->koneksi,$query);
+            if ($result) {
+                return true;
+            } else {
+                return false;
+            }
+        }
 
         public function deleteDosen($id) {
             $query = "DELETE FROM dosen WHERE id = $id";

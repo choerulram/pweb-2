@@ -16,13 +16,13 @@
             return $this->model->createDosen($nidn, $nama, $alamat);
         }
 
-        // public function getDosenById($id) {
-        //     return $this->model->getDosenById($id);
-        // }
+        public function getDosenById($id) {
+            return $this->model->getDosenById($id);
+        }
 
-        // public function updateDosen($id, $nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat) {
-        //     return $this->model->updateDosen($id, $nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat);
-        // }
+        public function updateDosen($id, $nidn, $nama, $alamat) {
+            return $this->model->updateDosen($id, $nidn, $nama, $alamat);
+        }
 
         public function deleteDosen($id) {
             return $this->model->deleteDosen($id);
