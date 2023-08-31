@@ -35,3 +35,8 @@ RewriteRule ^tambah_dsn/?$ views/dosen/tambah.php?page=$1 [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^proses_tambah_dsn/?$ views/dosen/proses_tambah.php?page=$1 [L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^delete_dsn/?$ views/dosen/hapus.php?page=$1 [L]

@@ -1,7 +1,7 @@
 <?php 
     // memanggil class model database
     include_once '../../config.php';
-    include_once '../../controllers/MahasiswaController.php';
+    include_once '../../controllers/DosenController.php';
 
     // instansiasi class database
     $database = new database;
@@ -10,8 +10,8 @@
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
 
-        $mahasiswaController = new MahasiswaController($db);
-        $result =  $mahasiswaController->deleteMahasiswa($id);
+        $dosenController = new DosenController($db);
+        $result =  $dosenController->deleteDosen($id);
 
         if ($result) {
             header("location:index.php");

@@ -34,5 +34,9 @@
         public function proses_tambah_dsn() {
             header("location:http://locahost/jobsheet5/views/dosen/tambah_proses.php");
         }
+
+        public function delete_dsn() {
+            header("location:http://locahost/jobsheet5/views/dosen/hapus.php");
+        }
     }
 ?>

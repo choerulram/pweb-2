@@ -24,8 +24,8 @@
         //     return $this->model->updateDosen($id, $nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat);
         // }
 
-        // public function deleteDosen($id) {
-        //     return $this->model->deleteDosen($id);
-        // }
+        public function deleteDosen($id) {
+            return $this->model->deleteDosen($id);
+        }
     }
 ?>
