@@ -12,7 +12,7 @@ RewriteRule ^mahasiswa/?$ views/mahasiswa/index.php?page=$1 [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^tambah/?$ views/mahasiswa/tambah.php?page=$1 [L]
+RewriteRule ^tambah_mhs/?$ views/mahasiswa/tambah.php?page=$1 [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -20,7 +20,11 @@ RewriteRule ^proses_tambah/?$ views/mahasiswa/proses_tambah.php?page=$1 [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^edit/?$ views/mahasiswa/edit.php?page=$1 [L]
+RewriteRule ^edit_mhs/?$ views/mahasiswa/edit.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^delete_mhs/?$ views/mahasiswa/hapus.php [L]
 
 
 # DOSEN
@@ -38,8 +42,8 @@ RewriteRule ^proses_tambah_dsn/?$ views/dosen/proses_tambah.php?page=$1 [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^edit_dsn/?$ views/dosen/edit.php?page=$1 [L]
+RewriteRule ^edit_dsn/?$ views/dosen/edit.php [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^delete_dsn/?$ views/dosen/hapus.php?page=$1 [L]
+RewriteRule ^delete_dsn/?$ views/dosen/hapus.php [L]

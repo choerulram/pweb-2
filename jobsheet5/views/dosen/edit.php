@@ -1,7 +1,8 @@
 <?php 
     // memanggil class model database
     include_once '../../config.php';
-    include_once '../../controllers/MahasiswaController.php';
+    include_once '../../controllers/DosenController.php';
+    require '../../index.php';
 
     // instansiasi class database
     $database = new database;
@@ -9,14 +10,63 @@
 
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
+        $dosenController = new DosenController($db);
+        $dosenData = $dosenController->getDosenById($id);
 
-        $mahasiswaController = new MahasiswaController($db);
-        $result =  $mahasiswaController->deleteMahasiswa($id);
+        if ($dosenData) {
+            if (isset($_POST['submit'])) {
+                $nidn = $_POST['nidn'];
+                $nama = $_POST['nama'];
+                $alamat = $_POST['alamat'];
 
-        if ($result) {
-            header("location:index.php");
-        } else {
-            echo "Gagal menghapus data";
+                $result = $dosenController->updateDosen($id, $nidn, $nama, $alamat);
+
+                if ($result) {
+                    header("location:dosen");
+                } else {
+                    header("location:edit_mhs");
+                }
+            }
         }
     }
 ?>
+
+        <h1>Edit Data Dosen</h1>
+        <?php 
+            if ($dosenData) {
+        ?>
+            <form action="" method="post">
+                <?php
+                // perulangan untuk mengambil data mahasiswa yang akan di edit
+                foreach ($dosenData as $d => $value) {
+                ?>
+
+                <table border="0">
+                    <tr>
+                        <td width="100">
+                            <?php 
+                                echo $d;
+                            ?>
+                        </td>
+                        <td>
+                            <input type="text" name="<?php echo $d; ?>" value="<?php echo $value; ?>">
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <?php
+                }
+                ?>
+                <div class="button-choice p-0">
+					<input class="btn btn-warning" type="submit" name="submit" value="Simpan">
+				</div>
+            
+            </form>
+        <?php
+            }
+        ?>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

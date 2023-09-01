@@ -15,7 +15,7 @@
         <form action="" method="post">
             <div class="container-fluid border p-5 mt-4 bg-light rounded">
                 <h3>Data Mahasiswa</h3>
-                <a class="btn btn-primary mb-3 mt-2" href="tambah">Tambah Mahasiswa</a>
+                <a class="btn btn-primary mb-3 mt-2" href="tambah_mhs">Tambah Mahasiswa</a>
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <tr>
@@ -45,8 +45,8 @@
                                 <td><?php echo $x['agama'] ?></td>
                                 <td><?php echo $x['alamat'] ?></td>
                                 <td>
-                                    <a class="btn btn-warning" href="edit?id=<?php echo $x['id']; ?>">Edit</a>
-                                    <a class="btn btn-danger" href="hapus.php?id=<?php echo $x['id']; ?>" onclick="return confirm('Apakah yakin akan menghapus')">Hapus</a>
+                                    <a class="btn btn-warning" href="edit_mhs?id=<?php echo $x['id']; ?>">Edit</a>
+                                    <a class="btn btn-danger" href="delete_mhs?id=<?php echo $x['id']; ?>" onclick="return confirm('Apakah yakin akan menghapus')">Hapus</a>
                                 </td>
                             </tr>
                         <?php 

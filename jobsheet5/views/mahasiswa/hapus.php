@@ -14,7 +14,7 @@
         $result =  $mahasiswaController->deleteMahasiswa($id);
 
         if ($result) {
-            header("location:index.php");
+            header("location:mahasiswa");
         } else {
             echo "Gagal menghapus data";
         }

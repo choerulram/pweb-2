@@ -39,7 +39,7 @@
         }
 
         public function deleteDosen($id) {
-            $query = "DELETE FROM dosen WHERE id = $id";
+            $query = "DELETE FROM dosen WHERE id = '$id'";
             $result = mysqli_query($this->koneksi,$query);
             if ($result) {
                 return true;

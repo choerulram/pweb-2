@@ -9,7 +9,7 @@
             header("location:http://localhost/jobsheet5/views/mahasiswa/index.php");
         }
 
-        public function tambah() {
+        public function tambah_mhs() {
             header("location:http://locahost/jobsheet5/views/mahasiswa/tambah.php");
         }
 
@@ -17,8 +17,12 @@
             header("location:http://locahost/jobsheet5/views/mahasiswa/tambah_proses.php");
         }
 
-        public function edit() {
+        public function edit_mhs() {
             header("location:http://locahost/jobsheet5/views/mahasiswa/edit.php");
+        }
+
+        public function delete_mhs() {
+            header("location:http://locahost/jobsheet5/views/mahasiswa/hapus.php");
         }
 
 
