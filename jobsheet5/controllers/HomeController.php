@@ -46,5 +46,26 @@
         public function delete_dsn() {
             header("location:http://locahost/jobsheet5/views/dosen/hapus.php");
         }
+        
+        // DOSEN
+        public function matkul() {
+            header("location:http://localhost/jobsheet5/views/matkul/index.php");
+        }
+        
+        // public function tambah_matkul() {
+        //     header("location:http://locahost/jobsheet5/views/matkul/tambah.php");
+        // }
+
+        // public function proses_tambah_matkul() {
+        //     header("location:http://locahost/jobsheet5/views/matkul/tambah_proses.php");
+        // }
+
+        // public function edit_matkul() {
+        //     header("location:http://locahost/jobsheet5/views/matkul/edit.php");
+        // }
+
+        // public function delete_matkul() {
+        //     header("location:http://locahost/jobsheet5/views/matkul/hapus.php");
+        // }
     }
 ?>
