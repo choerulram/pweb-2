@@ -17,22 +17,28 @@
                 </div>
                 <div class="mb-3 w-25">
 					<label for="exampleFormControlInput1" class="form-label"><b>ID Absensi</b></label>
-					<input type="text" name="tempat_lahir" class="form-control" id="exampleFormControlInput1" placeholder="Masukkan tempat lahir..." required/>
+					<input type="text" name="id_absensi" class="form-control" id="exampleFormControlInput1" placeholder="Masukkan tempat lahir..." required/>
 				</div>
 				<div class="mb-3 w-25">
 					<label for="exampleFormControlInput1" class="form-label"><b>Tanggal</b></label>
-					<input type="date" name="tanggal_lahir" class="form-control" id="exampleFormControlInput1" required/>
+					<input type="date" name="tanggal" class="form-control" id="exampleFormControlInput1" required/>
 				</div>
-				<div class="mb-3">
+				<div class="mb-3 w-25">
                     <label for="exampleFormControlInput1" class="form-label"><b>Waktu</b></label>
-                    <input type="time" class="form-control" name="nama" id="exampleFormControlInput1" placeholder="Masukkan nama..." required/>
+                    <input type="time" class="form-control" name="waktu" id="exampleFormControlInput1" placeholder="Masukkan nama..." required/>
                 </div>
 				<div class="mb-3">
 					<label for="exampleFormControlInput1" class="form-label"><b>Status Absensi</b></label><br/>
-					<input type="radio" id="Hadir" name="jenis_kelamin" value="Hadir" required/>
-					<label for="laki_laki">Laki-laki</label>
-					<input type="radio" id="telat" name="jenis_kelamin" value="Telat" required/>
-					<label for="perempuan">Perempuan</label>
+					<input type="radio" id="hadir" name="status_absensi" value="Hadir" required/>
+					<label for="hadir">Hadir</label>
+					<input type="radio" id="telat" name="status_absensi" value="Telat" required/>
+					<label for="telat">Telat</label>
+					<input type="radio" id="bolos" name="status_absensi" value="Bolos" required/>
+					<label for="bolos">Bolos</label>
+					<input type="radio" id="sakit" name="status_absensi" value="Sakit" required/>
+					<label for="sakit">Sakit</label>
+					<input type="radio" id="ijin" name="status_absensi" value="Ijin" required/>
+					<label for="ijin">Ijin</label>
 				</div>
 				<!-- <div class="mb-3 w-25">
 					<label for="exampleInputEmail1" class="form-label"><b>Agama</b></label>
@@ -48,7 +54,7 @@
 				</div> -->
                 <div class="mb-3">
 					<label for="exampleFormControlTextarea1" class="form-label"><b>Catatan</b></label>
-					<textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Tuliskan alamat anda..." name="alamat" required></textarea>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Tuliskan catatan di sini..." name="alamat"></textarea>
 				</div>
                 <div class="button-choice p-0">
 					<input class="btn btn-primary" type="submit" name="submit" value="Simpan">
