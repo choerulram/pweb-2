@@ -13,9 +13,9 @@
             header("location:http://locahost/tugas/views/sks/tambah.php");
         }
 
-        // public function proses_tambah() {
-        //     header("location:http://locahost/tugas/views/sks/tambah_proses.php");
-        // }
+        public function proses_tambah_sks() {
+            header("location:http://locahost/tugas/views/sks/proses_tambah.php");
+        }
 
         // public function edit_mhs() {
         //     header("location:http://locahost/tugas/views/sks/edit.php");

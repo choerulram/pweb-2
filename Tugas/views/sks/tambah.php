@@ -2,18 +2,18 @@
     require '../../index.php';
 ?>
 
-        <form action="proses_tambah" method="post">
+        <form action="proses_tambah_sks" method="post" autocomplete="off">
             <div class="container-fluid border p-5 mt-4 bg-light rounded w-50">
                 <div class="pt-2 pb-2 mb-3 text-center">
                     <h1>Tambah Data SKS</h1>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label"><b>Kode SKS</b></label>
-                    <input type="text" class="form-control" name="nim" id="exampleFormControlInput1" placeholder="Masukkan kode sks..." required/>
+                    <input type="text" class="form-control" name="kode_sks" id="exampleFormControlInput1" placeholder="Masukkan kode sks..." required/>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label"><b>Jumlah SKS</b></label>
-                    <input type="text" class="form-control" name="nama" id="exampleFormControlInput1" placeholder="Masukkan jumlah sks..." required/>
+                    <input type="text" class="form-control" name="jumlah_sks" id="exampleFormControlInput1" placeholder="Masukkan jumlah sks..." required/>
                 </div>
                 <div class="button-choice p-0">
 					<input class="btn btn-primary" type="submit" name="submit" value="Simpan">
