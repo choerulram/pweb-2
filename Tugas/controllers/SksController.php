@@ -24,8 +24,8 @@
             return $this->model->updateSks($id, $kode_sks, $jumlah_sks);
         }
 
-        // public function deleteMahasiswa($id) {
-        //     return $this->model->deleteMahasiswa($id);
-        // }
+        public function deleteSks($id) {
+            return $this->model->deleteSks($id);
+        }
     }
 ?>

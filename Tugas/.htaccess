@@ -22,9 +22,9 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^edit_sks/?$ views/sks/edit.php [L]
 
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteCond %{REQUEST_FILENAME} !-d
-# RewriteRule ^delete_mhs/?$ views/sks/hapus.php [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^delete_sks/?$ views/sks/hapus.php [L]
 
 # ABSENSI
 RewriteCond %{REQUEST_FILENAME} !-f

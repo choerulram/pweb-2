@@ -21,9 +21,9 @@
             header("location:http://locahost/tugas/views/sks/edit.php");
         }
 
-        // public function delete_mhs() {
-        //     header("location:http://locahost/tugas/views/sks/hapus.php");
-        // }
+        public function delete_sks() {
+            header("location:http://locahost/tugas/views/sks/hapus.php");
+        }
 
         // ABSENSI
         public function attendance() {

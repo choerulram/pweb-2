@@ -38,14 +38,14 @@
             }
         }
 
-        // public function deleteMahasiswa($id) {
-        //     $query = "DELETE FROM mhs WHERE id = $id";
-        //     $result = mysqli_query($this->koneksi,$query);
-        //     if ($result) {
-        //         return true;
-        //     } else {
-        //         return false;
-        //     }
-        // }                                                                                                                                                                                        
+        public function deleteSks($id) {
+            $query = "DELETE FROM sks WHERE id = $id";
+            $result = mysqli_query($this->koneksi,$query);
+            if ($result) {
+                return true;
+            } else {
+                return false;
+            }
+        }                                                                                                                                                                                        
     }
 ?>
