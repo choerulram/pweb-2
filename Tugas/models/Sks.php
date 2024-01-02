@@ -22,11 +22,11 @@
             }
         }
 
-        // public function getMahasiswaById($id) {
-        //     $query = "SELECT * FROM mhs WHERE id = $id";
-        //     $result = mysqli_query($this->koneksi,$query);
-        //     return mysqli_fetch_assoc($result);
-        // }
+        public function getSksById($id) {
+            $query = "SELECT * FROM sks WHERE id = $id";
+            $result = mysqli_query($this->koneksi,$query);
+            return mysqli_fetch_assoc($result);
+        }
 
         // public function updateMahasiswa($id, $nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat) {
         //     $query = "UPDATE mhs SET nim='$nim', nama='$nama', tempat_lahir='$tempat_lahir', tanggal_lahir='$tanggal_lahir', 

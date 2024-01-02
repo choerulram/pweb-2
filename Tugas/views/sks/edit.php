@@ -1,7 +1,7 @@
 <?php 
     // memanggil class model database
     include_once '../../config.php';
-    include_once '../../controllers/MahasiswaController.php';
+    include_once '../../controllers/SksController.php';
     require '../../index.php';
 
     // instansiasi class database
@@ -10,23 +10,18 @@
 
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
-        $mahasiswaController = new MahasiswaController($db);
-        $mahasiswaData = $mahasiswaController->getMahasiswaById($id);
+        $sksController = new SksController($db);
+        $sksData = $sksController->getSksById($id);
 
-        if ($mahasiswaData) {
+        if ($sksData) {
             if (isset($_POST['submit'])) {
-                $nim = $_POST['nim'];
-                $nama = $_POST['nama'];
-                $tempat_lahir = $_POST['tempat_lahir'];
-                $tanggal_lahir = $_POST['tanggal_lahir'];
-                $jenis_kelamin = $_POST['jenis_kelamin'];
-                $agama = $_POST['agama'];
-                $alamat = $_POST['alamat'];
+                $kode_sks = $_POST['kode_sks'];
+                $jumlah_sks = $_POST['jumlah_sks'];
 
-                $result = $mahasiswaController->updateMahasiswa($id, $nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat);
+                $result = $sksController->updateSks($id, $nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat);
 
                 if ($result) {
-                    header("location:mahasiswa");
+                    header("location:sks");
                 } else {
                     header("location:edit_mhs");
                 }
@@ -35,14 +30,14 @@
     }
 ?>
         <div class="container-fluid border p-5 mt-4 bg-light rounded">
-            <h3 class="mb-3 mt-1">Edit Data Mahasiswa</h3>
+            <h3 class="mb-3 mt-1">Edit Data SKS</h3>
             <?php 
-                if ($mahasiswaData) {
+                if ($sksData) {
             ?>
                 <form action="" method="post">
                     <?php
-                    // perulangan untuk mengambil data mahasiswa yang akan di edit
-                    foreach ($mahasiswaData as $d => $value) {
+                    // perulangan untuk mengambil data sks yang akan di edit
+                    foreach ($sksData as $d => $value) {
                     ?>
 
                     <table border="0">

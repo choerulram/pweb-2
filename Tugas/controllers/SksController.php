@@ -16,9 +16,9 @@
             return $this->model->createSks($kode_sks, $jumlah_sks);
         }
 
-        // public function getMahasiswaById($id) {
-        //     return $this->model->getMahasiswaById($id);
-        // }
+        public function getSksById($id) {
+            return $this->model->getSksById($id);
+        }
 
         // public function updateMahasiswa($id, $nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat) {
         //     return $this->model->updateMahasiswa($id, $nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat);

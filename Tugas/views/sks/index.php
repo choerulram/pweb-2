@@ -35,8 +35,8 @@
                                 <td><?php echo $x['kode_sks'] ?></td>
                                 <td><?php echo $x['jumlah_sks'] ?></td>
                                 <td>
-                                    <a class="btn btn-warning" href="edit_mhs?id=<?php echo $x['id']; ?>">Edit</a>
-                                    <a class="btn btn-danger" href="delete_mhs?id=<?php echo $x['id']; ?>" onclick="return confirm('Apakah yakin akan menghapus')">Hapus</a>
+                                    <a class="btn btn-warning" href="edit_sks?id=<?php echo $x['id']; ?>">Edit</a>
+                                    <a class="btn btn-danger" href="delete_sks?id=<?php echo $x['id']; ?>" onclick="return confirm('Apakah yakin akan menghapus')">Hapus</a>
                                 </td>
                             </tr>
                         <?php 
