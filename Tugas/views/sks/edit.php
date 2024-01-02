@@ -18,7 +18,7 @@
                 $kode_sks = $_POST['kode_sks'];
                 $jumlah_sks = $_POST['jumlah_sks'];
 
-                $result = $sksController->updateSks($id, $nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat);
+                $result = $sksController->updateSks($id, $kode_sks, $jumlah_sks);
 
                 if ($result) {
                     header("location:sks");

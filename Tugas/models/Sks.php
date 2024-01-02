@@ -28,16 +28,15 @@
             return mysqli_fetch_assoc($result);
         }
 
-        // public function updateMahasiswa($id, $nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat) {
-        //     $query = "UPDATE mhs SET nim='$nim', nama='$nama', tempat_lahir='$tempat_lahir', tanggal_lahir='$tanggal_lahir', 
-        //     jenis_kelamin='$jenis_kelamin', agama='$agama', alamat='$alamat' WHERE id='$id'";
-        //     $result = mysqli_query($this->koneksi,$query);
-        //     if ($result) {
-        //         return true;
-        //     } else {
-        //         return false;
-        //     }
-        // }
+        public function updateSks($id, $kode_sks, $jumlah_sks) {
+            $query = "UPDATE sks SET kode_sks='$kode_sks', jumlah_sks='$jumlah_sks' WHERE id='$id'";
+            $result = mysqli_query($this->koneksi,$query);
+            if ($result) {
+                return true;
+            } else {
+                return false;
+            }
+        }
 
         // public function deleteMahasiswa($id) {
         //     $query = "DELETE FROM mhs WHERE id = $id";
@@ -47,6 +46,6 @@
         //     } else {
         //         return false;
         //     }
-        // }
+        // }                                                                                                                                                                                        
     }
 ?>

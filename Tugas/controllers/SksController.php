@@ -20,9 +20,9 @@
             return $this->model->getSksById($id);
         }
 
-        // public function updateMahasiswa($id, $nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat) {
-        //     return $this->model->updateMahasiswa($id, $nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat);
-        // }
+        public function updateSks($id, $kode_sks, $jumlah_sks) {
+            return $this->model->updateSks($id, $kode_sks, $jumlah_sks);
+        }
 
         // public function deleteMahasiswa($id) {
         //     return $this->model->deleteMahasiswa($id);
