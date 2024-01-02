@@ -9,9 +9,9 @@
             header("location:http://localhost/tugas/views/sks/index.php");
         }
 
-        // public function add_sks() {
-        //     header("location:http://locahost/tugas/views/sks/tambah.php");
-        // }
+        public function add_sks() {
+            header("location:http://locahost/tugas/views/sks/tambah.php");
+        }
 
         // public function proses_tambah() {
         //     header("location:http://locahost/tugas/views/sks/tambah_proses.php");

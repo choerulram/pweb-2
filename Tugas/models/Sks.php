@@ -12,15 +12,15 @@
             return $result;
         }
 
-        // public function createMahasiswa($nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat) {
-        //     $query = "INSERT INTO mhs (nim,nama,tempat_lahir,tanggal_lahir,jenis_kelamin,agama,alamat) VALUES ('$nim','$nama','$tempat_lahir','$tanggal_lahir','$jenis_kelamin','$agama','$alamat')";
-        //     $result = mysqli_query($this->koneksi,$query);
-        //     if ($result) {
-        //         return true;
-        //     } else {
-        //         return false;
-        //     }
-        // }
+        public function createSks($kode_sks, $jumlah_sks) {
+            $query = "INSERT INTO sks (kode_sks, jumlah_sks) VALUES ('$kode_sks','$jumlah_sks')";
+            $result = mysqli_query($this->koneksi,$query);
+            if ($result) {
+                return true;
+            } else {
+                return false;
+            }
+        }
 
         // public function getMahasiswaById($id) {
         //     $query = "SELECT * FROM mhs WHERE id = $id";

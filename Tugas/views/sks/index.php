@@ -15,7 +15,7 @@
         <form action="" method="post">
             <div class="container-fluid border p-5 mt-4 bg-light rounded">
                 <h3>Tabel Data SKS</h3>
-                <a class="btn btn-primary mb-3 mt-2" href="tambah_mhs">Tambah SKS</a>
+                <a class="btn btn-primary mb-3 mt-2" href="add_sks">Tambah SKS</a>
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <tr>

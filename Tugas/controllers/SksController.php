@@ -12,9 +12,9 @@
             return $this->model->getAllSks();
         }
 
-        // public function createMahasiswa($nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat) {
-        //     return $this->model->createMahasiswa($nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat);
-        // }
+        public function createSks($kode_sks, $jumlah_sks) {
+            return $this->model->createSks($kode_sks, $jumlah_sks);
+        }
 
         // public function getMahasiswaById($id) {
         //     return $this->model->getMahasiswaById($id);
