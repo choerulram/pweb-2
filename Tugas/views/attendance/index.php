@@ -27,6 +27,7 @@
                             <th>Waktu</th>
                             <th>Status Absensi</th>
                             <th>Catatan</th>
+                            <th>Aksi</th>
                         </tr>
                         <?php 
                         $no = 1; // inisiasi nomor
@@ -44,8 +45,8 @@
                                 <td><?php echo $x['status_absensi'] ?></td>
                                 <td><?php echo $x['catatan'] ?></td>
                                 <td>
-                                    <a class="btn btn-warning" href="edit_mhs?id=<?php echo $x['id']; ?>">Edit</a>
-                                    <a class="btn btn-danger" href="delete_mhs?id=<?php echo $x['id']; ?>" onclick="return confirm('Apakah yakin akan menghapus')">Hapus</a>
+                                    <a class="btn btn-warning" href="edit_sks?id=<?php echo $x['id']; ?>">Edit</a>
+                                    <a class="btn btn-danger" href="delete_sks?id=<?php echo $x['id']; ?>" onclick="return confirm('Apakah yakin akan menghapus')">Hapus</a>
                                 </td>
                             </tr>
                         <?php 

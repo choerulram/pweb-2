@@ -1,15 +1,15 @@
 <?php 
-    include_once '../../models/Mahasiswa.php';
+    include_once '../../models/Sks.php';
 
-    class MahasiswaController{
+    class SksController{
         private $model;
 
         public function __construct($db) {
-            $this->model = new Mahasiswa($db);
+            $this->model = new Sks($db);
         }
 
-        public function getAllMahasiswa() {
-            return $this->model->getAllMahasiswa();
+        public function getAllSks() {
+            return $this->model->getAllSks();
         }
 
         // public function createMahasiswa($nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat) {

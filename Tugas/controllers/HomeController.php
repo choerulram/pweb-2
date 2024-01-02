@@ -5,6 +5,27 @@
         }
 
         // ABSENSI
+        public function sks() {
+            header("location:http://localhost/tugas/views/sks/index.php");
+        }
+
+        // public function add_sks() {
+        //     header("location:http://locahost/tugas/views/sks/tambah.php");
+        // }
+
+        // public function proses_tambah() {
+        //     header("location:http://locahost/tugas/views/sks/tambah_proses.php");
+        // }
+
+        // public function edit_mhs() {
+        //     header("location:http://locahost/tugas/views/sks/edit.php");
+        // }
+
+        // public function delete_mhs() {
+        //     header("location:http://locahost/tugas/views/sks/hapus.php");
+        // }
+
+        // ABSENSI
         public function attendance() {
             header("location:http://localhost/tugas/views/attendance/index.php");
         }

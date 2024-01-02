@@ -1,13 +1,13 @@
 <?php 
-    class Mahasiswa {
+    class Sks {
         private $koneksi;
 
         public function __construct($db) {
             $this->koneksi = $db;
         }
 
-        public function getAllMahasiswa() {
-            $query = "SELECT * FROM mhs";
+        public function getAllSks() {
+            $query = "SELECT * FROM sks";
             $result = mysqli_query($this->koneksi,$query);
             return $result;
         }
